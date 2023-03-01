@@ -8,6 +8,7 @@ function App() {
     async function pesquisarCep() {
       //alert ('valor digitado: ' + inputCepDigitado)
       const responseCep = await apiCep.get(`${inputCepDigitado}/json`)
+      setCep(responseCep.data);
       console.log(responseCep.data);
     }
   return (
@@ -18,6 +19,8 @@ function App() {
         <FiSearch/>
       </button>
       </p>
+      <h2>Valores da Pesquisa:</h2>
+      <p>Rua: {cep.logradouro}</p>
     </div>
   );
 }
