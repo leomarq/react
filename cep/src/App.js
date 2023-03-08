@@ -1,6 +1,9 @@
 import {useState} from "react";
 import { FiSearch } from "react-icons/fi";
 import apiCep from './services/apiCep.js';
+import { Title } from "./styles/styles";
+
+
 
 function App() {
   const [inputCepDigitado,setinputCepDigitado] = useState('');
@@ -13,6 +16,7 @@ function App() {
     }
   return (
     <div>
+      <Title>Componentes/estilo</Title>
       <h1>BUSCADOR DE CEP</h1>
       <p>CEP: <input type="text" placeholder="Digite seu CEP" value={inputCepDigitado} onChange={(event) => setinputCepDigitado(event.target.value)}></input>
       <button onClick={pesquisarCep}>
