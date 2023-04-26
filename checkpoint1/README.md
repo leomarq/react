@@ -1,1 +1,0 @@
-"Checkpoint 1" is the first test of the semester for our React class. The assignment was to build a simple application from scratch in 3 days. The theme was "technology". I decided to create a basic/minimalist template for a website which centralizes job openings in the tech field.
